@@ -2,8 +2,14 @@ name: Gitflow
 on:
   # To create pull requests.
   push:
+    branches:
+      - master
+      - release
   # To merge pull requests if not possible during the push run. Remove if `auto-merge` is `false`.
   pull_request_review:
+    branches:
+      - master
+      - release
   check_run:
     types: [completed]
 
