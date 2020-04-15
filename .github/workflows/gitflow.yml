@@ -2,11 +2,9 @@ name: Gitflow
 on:
   push:
   pull_request_review:
-  status:
   check_run:
     types:
       - completed
-      - created
 
 jobs:
   build:
@@ -15,5 +13,5 @@ jobs:
     steps:
     - uses: Logerfo/gitflow-action@0.0.4
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }} # The `GITHUB_TOKEN` secret.
-        dev: develop # The `dev` branch.
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        dev: develop
