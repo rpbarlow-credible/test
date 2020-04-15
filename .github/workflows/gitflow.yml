@@ -2,6 +2,7 @@ name: Gitflow
 on:
   push:
   pull_request_review:
+  status:
   check_run:
     types:
       - completed
