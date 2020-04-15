@@ -13,4 +13,4 @@ jobs:
     - uses: Logerfo/gitflow-action@0.0.4
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }} # The `GITHUB_TOKEN` secret.
-        dev: devel # The `dev` branch.
+        dev: develop # The `dev` branch.
