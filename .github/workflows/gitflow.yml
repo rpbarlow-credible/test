@@ -1,0 +1,16 @@
+name: Gitflow
+on:
+  push:
+  pull_request_review:
+  check_run:
+    types: [completed]
+
+jobs:
+  build:
+    name: Gitflow
+    runs-on: ubuntu-latest
+    steps:
+    - uses: Logerfo/gitflow-action@0.0.4
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }} # The `GITHUB_TOKEN` secret.
+        dev: develop # The `dev` branch.
