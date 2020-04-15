@@ -1,4 +1,4 @@
-name: Gitflow release
+name: Gitflow
 on:
   push:
   pull_request_review:
