@@ -1,9 +1,14 @@
-name: Gitflow
+name: Gitflow release
 on:
   push:
+    branches:
+      - release
   pull_request_review:
+    branches:
+      - release
   check_run:
-    types: [completed]
+    types:
+      - completed
 
 jobs:
   build:
