@@ -5,3 +5,4 @@
 A test repo
 
 This is a bugfix
+CONFLICT
